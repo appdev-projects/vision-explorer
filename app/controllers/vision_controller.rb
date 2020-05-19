@@ -43,4 +43,8 @@ class VisionController < ApplicationController
     @heading = @annotator_method.titleize
     @form_path = "/vision/#{detector}"
   end
+
+  def homepage
+    render({:template => "vision/homepage.html.erb"})
+  end
 end
