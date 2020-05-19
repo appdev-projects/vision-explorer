@@ -6,7 +6,6 @@ Rails.application.routes.draw do
 
   # =============================
 
-  #root("vision#homepage")
   get("/",  { :controller => "vision", :action => "homepage" })
 
   get("/vision/:detector", { :controller => "vision", :action => "form" })
