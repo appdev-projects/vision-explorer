@@ -45,6 +45,6 @@ class VisionController < ApplicationController
   end
 
   def homepage
-    render("/vision/homepage.html.erb")
+    render({:template => "vision/homepage.html.erb"})
   end
 end
